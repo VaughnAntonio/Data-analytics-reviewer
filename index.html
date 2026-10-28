@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IC4.0 Data Analysis Reviewer</title>
+  <meta name="description" content="Interactive revision site for the UC3M Data Analysis in IC4.0 2024/2025 final exam: lessons, formula cards, flashcards, written practice, calculators, diagram drills and a mock exam.">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="theme-color" content="#0d7464">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230d7464'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' font-weight='700' text-anchor='middle' fill='white'%3EIC4%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;700&display=swap">
+  <!--STYLES--><link rel="stylesheet" href="assets/styles.css"><!--/STYLES-->
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="side" aria-label="Main navigation">
+      <div class="brand"><div class="brand-mark" aria-hidden="true">IC4</div><div><b>Data Analysis</b><span>IC4.0 · Final exam reviewer</span></div></div>
+      <div class="search" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label for="search" class="sr">Search</label>
+        <input id="search" type="search" placeholder="Search lessons, formulas…" autocomplete="off">
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-foot">
+        <span id="storeNote">Progress is saved in this browser only.</span>
+        <button class="btn sm" id="themeBtn" type="button" aria-label="Change colour theme">Theme: auto</button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <div style="min-width:0">
+      <header class="topbar">
+        <button class="btn sm" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div class="brand" style="padding:0"><div class="brand-mark" aria-hidden="true" style="width:32px;height:32px;font-size:.72rem">IC4</div><b>Data Analysis</b></div>
+      </header>
+      <main class="main" id="main" tabindex="-1">
+        <div class="wrap" id="view"><p class="muted">Loading the reviewer…</p></div>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p style="padding:20px">This reviewer needs JavaScript to run.</p></noscript>
+  <script src="assets/data.js"></script>
+  <script src="assets/formulas.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

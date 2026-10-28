@@ -1,0 +1,13 @@
+{
+  "name": "ic40-data-analysis-reviewer",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Interactive revision site for the UC3M Data Analysis in IC4.0 2024/2025 final exam.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "katex": "0.16.11"
+  }
+}
